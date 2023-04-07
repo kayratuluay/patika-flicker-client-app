@@ -56,15 +56,47 @@
 		ED8E0BC729E014EB00BAB83B /* Patika - Flickr Client App */ = {
 			isa = PBXGroup;
 			children = (
+				ED8E0BDC29E01C5700BAB83B /* App */,
+				ED8E0BDD29E01C6300BAB83B /* Screens */,
+				ED8E0BDE29E01C6C00BAB83B /* Supporting Files */,
+			);
+			path = "Patika - Flickr Client App";
+			sourceTree = "<group>";
+		};
+		ED8E0BDC29E01C5700BAB83B /* App */ = {
+			isa = PBXGroup;
+			children = (
 				ED8E0BC829E014EB00BAB83B /* AppDelegate.swift */,
 				ED8E0BCA29E014EB00BAB83B /* SceneDelegate.swift */,
-				ED8E0BCC29E014EB00BAB83B /* ViewController.swift */,
-				ED8E0BCE29E014EB00BAB83B /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ED8E0BDD29E01C6300BAB83B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				ED8E0BDF29E01CA500BAB83B /* RecentPhotos */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		ED8E0BDE29E01C6C00BAB83B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				ED8E0BD129E014EC00BAB83B /* Assets.xcassets */,
 				ED8E0BD329E014EC00BAB83B /* LaunchScreen.storyboard */,
 				ED8E0BD629E014EC00BAB83B /* Info.plist */,
 			);
-			path = "Patika - Flickr Client App";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED8E0BDF29E01CA500BAB83B /* RecentPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				ED8E0BCE29E014EB00BAB83B /* Main.storyboard */,
+				ED8E0BCC29E014EB00BAB83B /* ViewController.swift */,
+			);
+			path = RecentPhotos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,12 +320,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Patika - Flickr Client App/Info.plist";
+				INFOPLIST_FILE = "Patika - Flickr Client App/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +333,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kayratuluay.Patika---Flickr-Client-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,12 +350,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Patika - Flickr Client App/Info.plist";
+				INFOPLIST_FILE = "Patika - Flickr Client App/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +363,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kayratuluay.Patika---Flickr-Client-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
