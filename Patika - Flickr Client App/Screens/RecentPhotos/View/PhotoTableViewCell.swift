@@ -8,6 +8,7 @@
 import UIKit
 
 class PhotoTableViewCell: UITableViewCell {
+    
 
     @IBOutlet weak var ownerImageView: UIImageView!
     @IBOutlet weak var ownerNameLabel: UILabel!
@@ -16,6 +17,7 @@ class PhotoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        ownerImageView.layer.cornerRadius = 24.0
         // Initialization code
     }
 

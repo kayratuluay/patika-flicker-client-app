@@ -9,41 +9,41 @@ import Foundation
 
 // MARK: - Photo
 struct Photo: Codable {
-    let id, owner, secret, server: String
-    let farm: Int
-    let title: String
-    let ispublic, isfriend, isfamily: Int
-    let description: Description
-    let oWidth, oHeight, dateupload, lastupdate: String
-    let datetaken: String
-    let datetakengranularity: Int
-    let datetakenunknown, ownername, iconserver: String
-    let iconfarm: Int
-    let views, tags, machineTags, originalsecret: String
-    let originalformat: String
-    let latitude, longitude, accuracy, context: Int
-    let media, mediaStatus: String
-    let urlSq: String
-    let heightSq, widthSq: Int
-    let urlT: String
-    let heightT, widthT: Int
-    let urlS: String
-    let heightS, widthS: Int
-    let urlQ: String
-    let heightQ, widthQ: Int
-    let urlM: String
-    let heightM, widthM: Int
-    let urlN: String
-    let heightN, widthN: Int
-    let urlZ: String
-    let heightZ, widthZ: Int
-    let urlC: String
-    let heightC, widthC: Int
-    let urlL: String
-    let heightL, widthL: Int
-    let urlO: String
-    let heightO, widthO: Int
-    let pathalias: String
+    let id, owner, secret, server: String?
+    let farm: Int?
+    let title: String?
+    let ispublic, isfriend, isfamily: Int?
+    let description: Description?
+    let oWidth, oHeight, dateupload, lastupdate: String?
+    let datetaken: String?
+    let datetakengranularity: Int?
+    let datetakenunknown, ownername, iconserver: String?
+    let iconfarm: Int?
+    let views, tags, machineTags, originalsecret: String?
+    let originalformat: String?
+    let latitude, longitude, accuracy, context: Int?
+    let media, mediaStatus: String?
+    let urlSq: String?
+    let heightSq, widthSq: Int?
+    let urlT: String?
+    let heightT, widthT: Int?
+    let urlS: String?
+    let heightS, widthS: Int?
+    let urlQ: String?
+    let heightQ, widthQ: Int?
+    let urlM: String?
+    let heightM, widthM: Int?
+    let urlN: String?
+    let heightN, widthN: Int?
+    let urlZ: String?
+    let heightZ, widthZ: Int?
+    let urlC: String?
+    let heightC, widthC: Int?
+    let urlL: String?
+    let heightL, widthL: Int?
+    let urlO: String?
+    let heightO, widthO: Int?
+    let pathalias: String?
 
     enum CodingKeys: String, CodingKey {
         case id, owner, secret, server, farm, title, ispublic, isfriend, isfamily, description
@@ -87,9 +87,23 @@ struct Photo: Codable {
     }
 }
 
+extension Photo {
+    var buddyIconUrl: String? {
+        if let iconserver = iconserver,
+           let iconfarm = iconfarm,
+           let nsid = owner,
+           NSString(string: iconserver).intValue > 0 {
+            return "http://farm\(iconfarm).staticflickr.com/\(iconserver)/buddyicons/\(nsid).jpg"
+        }
+        else {
+            return "https://www.flickr.com/images/buddyicon.gif"
+        }
+    }
+}
+
 // MARK: - Description
 struct Description: Codable {
-    let content: String
+    let content: String?
 
     enum CodingKeys: String, CodingKey {
         case content = "_content"

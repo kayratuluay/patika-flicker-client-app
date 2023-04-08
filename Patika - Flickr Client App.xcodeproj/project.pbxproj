@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED50FD4529E1993C00870C4F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED50FD4429E1993C00870C4F /* NetworkManager.swift */; };
 		ED8E0BC929E014EB00BAB83B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E0BC829E014EB00BAB83B /* AppDelegate.swift */; };
 		ED8E0BCB29E014EB00BAB83B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E0BCA29E014EB00BAB83B /* SceneDelegate.swift */; };
 		ED8E0BCD29E014EB00BAB83B /* RecentPhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8E0BCC29E014EB00BAB83B /* RecentPhotosTableViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED50FD4429E1993C00870C4F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		ED8E0BC529E014EB00BAB83B /* Patika - Flickr Client App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patika - Flickr Client App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8E0BC829E014EB00BAB83B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED8E0BCA29E014EB00BAB83B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED50FD4129E1990000870C4F /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				ED8E0BC829E014EB00BAB83B /* AppDelegate.swift */,
+				ED8E0BCA29E014EB00BAB83B /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		ED50FD4229E1991200870C4F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ED50FD4329E1991800870C4F /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ED50FD4329E1991800870C4F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				ED50FD4429E1993C00870C4F /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		ED8E0BBC29E014EB00BAB83B = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +105,8 @@
 		ED8E0BDC29E01C5700BAB83B /* App */ = {
 			isa = PBXGroup;
 			children = (
-				ED8E0BC829E014EB00BAB83B /* AppDelegate.swift */,
-				ED8E0BCA29E014EB00BAB83B /* SceneDelegate.swift */,
+				ED50FD4229E1991200870C4F /* Core */,
+				ED50FD4129E1990000870C4F /* Delegates */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -237,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED50FD4529E1993C00870C4F /* NetworkManager.swift in Sources */,
 				ED8E0BF129E10FBF00BAB83B /* Photo.swift in Sources */,
 				ED8E0BE129E06CD300BAB83B /* PhotoTableViewCell.swift in Sources */,
 				ED8E0BCD29E014EB00BAB83B /* RecentPhotosTableViewController.swift in Sources */,
@@ -391,6 +419,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4MJJ4323R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Patika - Flickr Client App/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -421,6 +450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4MJJ4323R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Patika - Flickr Client App/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
